@@ -17,4 +17,8 @@ contract mortal{
 		}
 	}
 	
+	function kill() {
+
+		suicide(owner);
+	}
 }
