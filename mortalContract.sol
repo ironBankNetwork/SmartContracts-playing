@@ -8,4 +8,13 @@ contract mortal{
 
 	}
 
+
+	modifier onlyOwner{
+		if (msg.sender != owner){
+			throw;
+		}else{
+			_
+		}
+	}
+	
 }
