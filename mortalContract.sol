@@ -17,7 +17,7 @@ contract mortal{
 		}
 	}
 	
-	function kill() {
+	function kill() onlyOwner{
 
 		suicide(owner);
 	}
