@@ -1,2 +1,2 @@
 # SmartContracts-playing
-Playing with Smart Contracts in Solidity
+Playing with Smart Contracts in Solidity.
