@@ -64,6 +64,11 @@ contract Lotery {
         }
     }
     
+    function kill() onlyOwner {
+        Status('Contracted Killed, not longer available to use', msg.sender, this.balance);
+	    suicide(owner);
+	}
+	
     modifier onlyOwner {
 		if (msg.sender != owner) {
 			revert();
